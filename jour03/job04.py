@@ -33,6 +33,7 @@ class Equipe:
     def __init__(self, nom):
         self.nom = nom
         self.joueurs = []
+        self.buts = 0
 
     def ajouterJoueur(self, joueur):
         self.joueurs.append(joueur)
@@ -83,4 +84,9 @@ equipe_paris.mettreAJourStatistiquesJoueur(joueur_paris_3, buts=1)
 
 print("** Joueurs de l'équipe Paris Saint-Germain après le match **")
 equipe_paris.afficherStatistiquesJoueurs()
-print("** Joueurs de l'équipe Olympique de
+print("** Joueurs de l'équipe Olympique de Marseille après le match **")
+equipe_marseille.afficherStatistiquesJoueurs()
+
+# Affichage des résultats du match
+print("** Résultat du match **")
+print(f"Paris Saint-Germain : {equipe_paris.buts} - {equipe_marseille.buts} Olympique de Marseille")
